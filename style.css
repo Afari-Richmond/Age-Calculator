@@ -1,0 +1,96 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+--Purple: hsl(259, 100%, 65%);
+--Light-red: hsl(0, 100%, 67%);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/age-calculator-app-main/assets/fonts/Poppins-Regular.ttf);
+}
+
+*{
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--Off-white);
+}
+
+.container{
+    position: relative;
+    background: var(--White);
+    padding: 12;
+    width: 420px;
+    padding: 30px;
+    max-width: 80%;
+    border-bottom-right-radius: 150px;
+    
+
+
+}
+
+.calc-box{
+    display: flex;
+    border-bottom: 2px solid var(--Light-grey);
+    margin-bottom: 30px;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    
+
+}
+.input-container input{
+    width: 60px;
+    border: 2px solid var(--Off-white);
+    padding: 6px;
+}
+
+.input-container span{
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: var(--Smokey-grey);
+}
+small{
+    color: red;
+    font-size: 0.6rem;
+}
+
+button{
+    position: absolute;
+    right: 10px;
+    top:120px;
+    background-color: var(--Purple);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   padding: 3px;
+   cursor: pointer;
+}
+
+.output-section span{
+    color: var(--Purple);
+    font-style: italic;
+
+}
+
+.output-section{
+    font-weight: bold;
+}
